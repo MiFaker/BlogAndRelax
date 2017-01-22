@@ -7,6 +7,14 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <section class="main">
+        <div class="container">
+          <%= yield %>
+        </div>
+      </section>
+      <section class="footer">
+      </section>
+    </header>
   </body>
 </html>

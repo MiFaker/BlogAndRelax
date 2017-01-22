@@ -1,0 +1,29 @@
+<div>
+  <div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default login-area">
+      <div class="panel-heading">
+        <h2 class="text-center"><%= t "admin.login_screen.bar" %></h2>
+      </div>
+      <div class="panel-body">
+        <%= render "shared/error_messages" %>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name),
+          html: {class: "login-form"}) do |f| %>
+          <div class="form-group">
+            <%= f.email_field :email, autofocus: true,
+              placeholder: t("admin.login_screen.fields.email"), class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field :password, autofocus: true,
+              placeholder: t("admin.login_screen.fields.password"), class: "form-control" %>
+          </div>
+          <div class="form-group text-center">
+            <%= f.submit t "admin.login_screen.sign_in", class: "form-control" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="text-center links">
+        <%= link_to t("admin.login_screen.forgot_password"), new_admin_password_path %>
+      </div>
+    </div>
+  </div>
+</div>
