@@ -38,7 +38,7 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.4)
     ast (2.3.0)
-    autoprefixer-rails (6.6.1)
+    autoprefixer-rails (6.7.0)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -187,6 +187,8 @@ GEM
       railties (>= 4.2.0, < 5.1)
     robocop (0.1.1)
       rack
+    rspec-collection_matchers (1.1.2)
+      rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -283,6 +285,7 @@ DEPENDENCIES
   rails_best_practices
   reek
   robocop
+  rspec-collection_matchers
   rspec-rails
   rubocop-checkstyle_formatter
   sass-rails (~> 5.0)
