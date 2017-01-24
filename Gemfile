@@ -24,6 +24,8 @@ gem "mysql2"
 #support
 gem "dotenv-rails"
 
+gem 'rails_admin', '~> 1.0'
+
 group :development, :test do
   gem "rspec-rails"
   gem "rspec-collection_matchers"
