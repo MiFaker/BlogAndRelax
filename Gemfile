@@ -24,7 +24,12 @@ gem "mysql2"
 #support
 gem "dotenv-rails"
 
+#management admin
 gem 'rails_admin', '~> 1.0'
+
+#mailchimp
+gem 'mailchimp-api', require: 'mailchimp'
+gem "gibbon"
 
 group :development, :test do
   gem "rspec-rails"
