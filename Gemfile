@@ -23,6 +23,7 @@ gem "mysql2"
 
 #support
 gem "dotenv-rails"
+gem "config"
 
 #management admin
 gem 'rails_admin', '~> 1.0'
