@@ -31,4 +31,11 @@ en:
     top_page:
       bar: "Blog And Relax Admin"
       log_out: "Log out"
+    left_nav:
+      home: "Home"
+      dash_board: "Dash Board"
+      account: "Account"
+      authorization_admin: "Authorization Admin"
+      content_admin: "Content Admin"
+      statistic_data: "Statistic Data"
   title: "Blog And Relax"

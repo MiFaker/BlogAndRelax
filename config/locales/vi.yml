@@ -31,4 +31,11 @@ en:
     top_page:
       bar: "Blog And Relax Admin"
       log_out: "Đăng xuất"
+    left_nav:
+      home: "Trang Chủ"
+      dash_board: "Điều Hành"
+      account: "Tài Khoản"
+      authorization_admin: "Quản lý"
+      content_admin: "Liên hệ"
+      statistic_data: "Thống Kê Dữ Liệu"
   title: "Blog And Relax"
