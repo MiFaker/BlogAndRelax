@@ -38,4 +38,19 @@ en:
       authorization_admin: "Quản lý"
       content_admin: "Liên hệ"
       statistic_data: "Thống Kê Dữ Liệu"
+    reset_password_screen:
+      title: "Thiết Lập Lại Mật Khẩu"
+      placeholder: "Địa Chỉ Email"
+      send: "Gửi"
+    registration_screen:
+      sign_up: "Đăng Ký"
+    or: "Hoặc"
   title: "Blog And Relax"
+  activerecord:
+    errors:
+      models:
+        admin:
+          attributes:
+            email:
+              blank: "không được bỏ trống"
+              not_found: "không tồn tại"
