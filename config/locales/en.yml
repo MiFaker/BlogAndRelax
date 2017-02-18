@@ -38,4 +38,22 @@ en:
       authorization_admin: "Authorization Admin"
       content_admin: "Content Admin"
       statistic_data: "Statistic Data"
+    reset_password_screen:
+      title: "Reset Password Setting URL"
+      placeholder: "Email Address"
+      send: "Send"
+    registration_screen:
+      sign_up: "Sign up"
+    or: "Or"
   title: "Blog And Relax"
+  activerecord:
+    errors:
+      models:
+        admin:
+          attributes:
+            email:
+              blank: "can't be blank"
+              not_found: "not found"
+
+
+

@@ -10,11 +10,11 @@
           html: {class: "login-form"}) do |f| %>
           <div class="form-group">
             <%= f.email_field :email, autofocus: true,
-              placeholder: t("admin.login_screen.fields.email"), class: "form-control" %>
+              placeholder: t("admin.login_screen.fields.email"), class: "form-control", type: "text" %>
           </div>
           <div class="form-group">
             <%= f.password_field :password, autofocus: true,
-              placeholder: t("admin.login_screen.fields.password"), class: "form-control" %>
+              placeholder: t("admin.login_screen.fields.password"), class: "form-control", type: "password" %>
           </div>
           <div class="form-group text-center">
             <%= f.submit t "admin.login_screen.sign_in", class: "form-control" %>
@@ -22,7 +22,7 @@
         <% end %>
       </div>
       <div class="text-center links">
-        <%= link_to t("admin.login_screen.forgot_password"), new_admin_password_path %>
+      <%= link_to t("admin.login_screen.forgot_password"), new_admin_password_path %>
       </div>
     </div>
   </div>

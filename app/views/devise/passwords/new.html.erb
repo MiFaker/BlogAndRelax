@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default reset-password-area">
+      <div class="panel-heading">
+        <h2 class="text-center"><%= t "admin.reset_password_screen.title" %></h2>
+      </div>
+      <div class="panel-body">
+        <%= render "shared/error_messages" %>
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name),
+          html: { method: :post, class: "login-form" }) do |f| %>
+          <%= devise_error_messages! %>
+          <div class="form-group">
+            <%= f.email_field :email, autofocus: true,
+              placeholder: t("admin.reset_password_screen.placeholder"), class: "form-control", type: "text" %>
+          </div>
+          <div class="form-group text-center">
+            <%= f.submit t "admin.reset_password_screen.send", class: "form-control" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="text-center links">
+        <%= link_to t("admin.login_screen.sign_in"), new_admin_session_path %>
+        <%= t "admin.or" %>
+        <%= link_to t("admin.registration_screen.sign_up"), new_admin_registration_path %>
+      </div>
+    </div>
+  </div>
+ </div>
