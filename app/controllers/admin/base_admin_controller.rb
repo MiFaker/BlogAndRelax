@@ -1,6 +1,6 @@
 class Admin::BaseAdminController < ActionController::Base
   before_action :authenticate_admin!
-  protect_from_forgery
+  protect_from_forgery with: :exception
 
   layout "admin/base"
 end

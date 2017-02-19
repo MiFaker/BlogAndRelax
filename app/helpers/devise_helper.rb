@@ -13,6 +13,6 @@ module DeviseHelper
       </div>
     HTML
 
-    html.html_safe
+    safe_join([html.html_safe])
   end
 end

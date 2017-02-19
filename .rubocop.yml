@@ -154,6 +154,7 @@ Metrics/ClassLength:
 
 # Align with the style guide.
 Style/CollectionMethods:
+  Enabled: false
   # Mapping from undesired method to desired_method
   # e.g. to use `detect` over `find`:
   #
@@ -164,7 +165,6 @@ Style/CollectionMethods:
     collect: 'map'
     collect!: 'map!'
     inject: 'reduce'
-    detect: 'find'
     find_all: 'select'
 
 # Checks formatting of special comments
@@ -308,6 +308,9 @@ Style/MethodDefParentheses:
 Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 10
+
+Metric/BlockLength:
+  Enabled: false
 
 Style/MethodName:
   EnforcedStyle: snake_case
