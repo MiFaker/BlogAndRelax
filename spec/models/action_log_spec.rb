@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe ActionLog, type: :model do
   describe "action_log validating" do
