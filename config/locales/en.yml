@@ -54,6 +54,5 @@ en:
             email:
               blank: "can't be blank"
               not_found: "not found"
-
-
-
+  label:
+    form_inform_errors: "From Information Errors "
