@@ -45,6 +45,13 @@ en:
     registration_screen:
       sign_up: "Sign up"
     or: "Or"
+    account_list:
+      title: "Account Admin List"
+      id: "ID"
+      name: "Name"
+      email: "Email"
+      phone: "Phone"
+      Memo: "Memo"
   title: "Blog And Relax"
   activerecord:
     errors:

@@ -39,3 +39,4 @@ curls
 vendor/assets/components/
 dump.rdb
 .env
+spec/examples.txt

@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+vi:
   admin:
     login_screen:
       bar: "Blog And Relax Admin"
@@ -45,6 +45,13 @@ en:
     registration_screen:
       sign_up: "Đăng Ký"
     or: "Hoặc"
+    account_list:
+      title: "Danh Sách Tài Khoản"
+      id: "ID"
+      name: "Họ Tên"
+      email: "Email"
+      phone: "Số Điện Thoại"
+      Memo: "Ghi Chú"
   title: "Blog And Relax"
   activerecord:
     errors:

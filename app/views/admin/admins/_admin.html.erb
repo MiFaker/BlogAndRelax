@@ -1,0 +1,10 @@
+<%= paginate admins, remote: true %>
+<% admins.each_with_index do |admin, index| %>
+  <tr>
+    <td><%= index + 1 %></td>
+    <td><%= admin.first_name %><%= admin.last_name%></td>
+    <td><%= admin.email %></td>
+    <td><%= admin.phone %></td>
+    <td><%= admin.memo %></td>
+  </tr>
+<% end %>
