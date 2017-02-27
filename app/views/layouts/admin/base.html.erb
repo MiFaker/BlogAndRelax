@@ -3,10 +3,10 @@
   <head>
     <title><%= t "title" %></title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag "admin", media: "all" %>
-    <%= javascript_include_tag "admin" %>
+    <%= stylesheet_link_tag :application_admin, media: "all" %>
+    <%= javascript_include_tag :application_admin %>
   </head>
-  <body>
+  <body ng-app="adminApp">
     <header>
       <div id="wrapper">
         <%= render "layouts/admin/header" %>
@@ -24,5 +24,6 @@
       <!-- <section class="footer">
       </section> -->
     </header>
+    <%= javascript_include_tag :ng_admin %>
   </body>
 </html>

@@ -6,9 +6,12 @@ git_source(:github) do |repo_name|
 end
 
 gem "coffee-rails", "~> 4.2"
+gem "jbuilder"
 gem "jquery-rails"
+gem "kaminari"
 gem "puma", "~> 3.0"
 gem "rails", "~> 4.2", ">= 4.2.7.1"
+gem "ransack"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 
@@ -37,6 +40,7 @@ group :development, :test do
   gem "better_errors"
   gem "byebug", platform: :mri
   gem "factory_girl_rails"
+  gem "faker"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-collection_matchers"

@@ -14,6 +14,10 @@ Rails.application.routes.draw do
     get "/password/edit" => "admin/passwords#new", as: :edit_admin_password
   end
 
+  scope module: :admin, as: :admin do
+    resources :admins
+  end
+
   unauthenticated do
     devise_scope :admin do
       root to: "admin/sessions#new", as: :unauthenticated_admin
