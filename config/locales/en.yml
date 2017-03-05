@@ -26,8 +26,10 @@ en:
       fields:
         email: "Email"
         password: "Password"
+        password_confirmation: "Password Confirmation"
       sign_in: "Sign in"
       forgot_password: "Forgot your password"
+      sign_up: "Sign up"
     top_page:
       bar: "Blog And Relax Admin"
       log_out: "Log out"

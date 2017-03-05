@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     post "/password" => "admin/passwords#create", as: :admin_password
     get "/password/new" => "admin/passwords#new", as: :new_admin_password
     get "/password/edit" => "admin/passwords#new", as: :edit_admin_password
+    # post "/sign_up" => "admin/registrations#create", as: :admin_registration
+    # get "/sign_up/new" => "admin/registrations#new", as: :new_admin_registration
+    # get "/sign_up/edit" => "admin/registrations#new", as: :edit_admin_registration
   end
 
   scope module: :admin, as: :admin do

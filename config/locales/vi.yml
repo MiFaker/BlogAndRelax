@@ -26,7 +26,9 @@ vi:
       fields:
         email: "Email"
         password: "Password"
+        password_confirmation: "Password Confirmation"
       sign_in: "Đăng nhập"
+      sign_up: "Đăng ký"
       forgot_password: "Quên mật khẩu"
     top_page:
       bar: "Blog And Relax Admin"

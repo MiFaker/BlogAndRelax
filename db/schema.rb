@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170129140339) do
+ActiveRecord::Schema.define(version: 20170305110719) do
 
   create_table "action_logs", force: :cascade do |t|
     t.integer  "target_id",    limit: 4
@@ -45,24 +45,22 @@ ActiveRecord::Schema.define(version: 20170129140339) do
     t.string   "fax",                    limit: 255
     t.text     "memo",                   limit: 65535
     t.integer  "role_id",                limit: 4
+    t.string   "confirmation_token",     limit: 255
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email",      limit: 255
   end
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
-  add_index "admins", ["role_id"], name: "index_admins_on_role_id", using: :btree
-
-  create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
-    t.string   "value",      limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
+  add_index "admins", ["role_id"], name: "fk_rails_460554bff2", using: :btree
 
   create_table "roles", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.text     "permissions", limit: 65535
     t.string   "type",        limit: 255
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_foreign_key "admins", "roles"

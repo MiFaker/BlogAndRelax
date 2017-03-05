@@ -1,4 +1,4 @@
-class AddDetailsToAdmin < ActiveRecord::Migration[5.0]
+class AddDetailsToAdmin < ActiveRecord::Migration
   def change
     add_column :admins, :gender_type, :integer
     add_column :admins, :last_name, :string

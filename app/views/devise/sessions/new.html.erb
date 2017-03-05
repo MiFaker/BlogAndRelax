@@ -1,6 +1,6 @@
 <div>
   <div class="col-md-4 col-md-offset-4">
-    <div class="panel panel-default login-area">
+    <div class="panel panel-default devise-area">
       <div class="panel-heading">
         <h2 class="text-center"><%= t "admin.login_screen.bar" %></h2>
       </div>
@@ -22,7 +22,9 @@
         <% end %>
       </div>
       <div class="text-center links">
-      <%= link_to t("admin.login_screen.forgot_password"), new_admin_password_path %>
+        <%= link_to t("admin.login_screen.forgot_password"), new_admin_password_path %>
+        <%= t "admin.or" %>
+        <%= link_to t("admin.registration_screen.sign_up"), new_admin_registration_path %>
       </div>
     </div>
   </div>
