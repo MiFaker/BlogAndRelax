@@ -20,9 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  admin:
+  user:
     login_screen:
-      bar: "Blog And Relax Admin"
+      bar: "Blog And Relax User"
       fields:
         email: "Email"
         password: "Password"
@@ -31,14 +31,14 @@ en:
       forgot_password: "Forgot your password"
       sign_up: "Sign up"
     top_page:
-      bar: "Blog And Relax Admin"
+      bar: "Blog And Relax User"
       log_out: "Log out"
     left_nav:
       home: "Home"
       dash_board: "Dash Board"
       account: "Account"
-      authorization_admin: "Authorization Admin"
-      content_admin: "Content Admin"
+      authorization_user: "Authorization User"
+      content_user: "Content User"
       statistic_data: "Statistic Data"
     reset_password_screen:
       title: "Reset Password Setting URL"
@@ -48,7 +48,7 @@ en:
       sign_up: "Sign up"
     or: "Or"
     account_list:
-      title: "Account Admin List"
+      title: "Account User List"
       id: "ID"
       name: "Name"
       email: "Email"
@@ -58,7 +58,7 @@ en:
   activerecord:
     errors:
       models:
-        admin:
+        user:
           attributes:
             email:
               blank: "can't be blank"

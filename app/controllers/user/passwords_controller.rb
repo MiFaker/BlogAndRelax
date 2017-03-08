@@ -1,4 +1,4 @@
-class Admin::PasswordsController < Devise::PasswordsController
+class User::PasswordsController < Devise::PasswordsController
   def new
     self.resource = resource_class.new
   end
@@ -18,6 +18,6 @@ class Admin::PasswordsController < Devise::PasswordsController
 
   protected
   def after_send_reset_password_url
-    new_admin_session_path if is_navigational_format?
+    new_user_session_path if is_navigational_format?
   end
 end

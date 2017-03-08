@@ -4,16 +4,16 @@
   </div>
   <ul class="nav navbar-right top-nav">
     <li class="dropdown">
-      <%= link_to current_admin.email, "#", data: {toggle: "dropdown"},
+      <%= link_to current_user.email, "#", data: {toggle: "dropdown"},
        class: "dropdown-toggle" %>
       <ul class="dropdown-menu">
         <li>
-          <%= link_to t("admin.account.setting"), "#" %>
+          <%= link_to t("user.account.setting"), "#" %>
         </li>
         <li class="divider">
         </li>
         <li>
-          <%= link_to t("admin.top_page.log_out"), admin_logout_path %>
+          <%= link_to t("user.top_page.log_out"), user_logout_path %>
         </li>
       </ul>
     </li>

@@ -9,12 +9,12 @@
 # { name: 'Lord of the Rings' }])
 # Character.create(name: 'Luke', movie: movies.first)
 puts "Create sample account admin"
-Admin.create(email: "admin@bar.com", password: "bar12345678",
+User.create(email: "admin@bar.com", password: "bar12345678",
   password_confirmation: "bar12345678")
 
 puts "Create faker account admin"
 500.times do
-  Admin.create(
+  User.create(
     email: Faker::Internet.email,
     password: "bar12345678",
     password_confirmation: "bar12345678",

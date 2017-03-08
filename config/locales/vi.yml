@@ -20,9 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 vi:
-  admin:
+  user:
     login_screen:
-      bar: "Blog And Relax Admin"
+      bar: "Blog And Relax User"
       fields:
         email: "Email"
         password: "Password"
@@ -31,14 +31,14 @@ vi:
       sign_up: "Đăng ký"
       forgot_password: "Quên mật khẩu"
     top_page:
-      bar: "Blog And Relax Admin"
+      bar: "Blog And Relax User"
       log_out: "Đăng xuất"
     left_nav:
       home: "Trang Chủ"
       dash_board: "Điều Hành"
       account: "Tài Khoản"
-      authorization_admin: "Quản lý"
-      content_admin: "Liên hệ"
+      authorization_user: "Quản lý"
+      content_user: "Liên hệ"
       statistic_data: "Thống Kê Dữ Liệu"
     reset_password_screen:
       title: "Thiết Lập Lại Mật Khẩu"
@@ -58,7 +58,7 @@ vi:
   activerecord:
     errors:
       models:
-        admin:
+        user:
           attributes:
             email:
               blank: "không được bỏ trống"
