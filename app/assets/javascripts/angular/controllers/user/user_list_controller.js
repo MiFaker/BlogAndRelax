@@ -1,20 +1,21 @@
 'use-strict'
 
-angular.module("adminApp")
-  .controller("AdminListController", ['$scope', '$location', 'adminservice', AdminListController]);
+angular.module("userApp")
+  .controller("UserListController", ['$scope', '$location', 'userservice', UserListController]);
 
-function AdminListController($scope, $location, adminservice){
+function UserListController($scope, $location, userservice){
   $scope.params = {
     limit: parseInt($location.search().limit),
     page: $location.search().page
   }
 
-  $scope.refreshAdminList = function(resetPage){
+  $scope.refreshUserList = function(resetPage){
     if (resetPage){
       $scope.params.page = 1;
     }
     var params = angular.extend({}, $scope.params)
-    adminservice.getAdminList(params).then(function(res){
+    userservice.getUserList(params).then(function(res){
+      debugger
       angular.extend($scope, res);
 
       $scope.params = params;

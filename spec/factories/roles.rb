@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :role do
-    name "admin"
+    name "user"
     permissions{{active_logs: {create: true, delete: false}}}
-    type "AdminRole"
+    type "UserRole"
   end
 end

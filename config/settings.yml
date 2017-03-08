@@ -1,6 +1,6 @@
 actions:
-  admin:
+  user:
     login: "login"
 pagination:
-  admin:
+  user:
     per_page_option: 10

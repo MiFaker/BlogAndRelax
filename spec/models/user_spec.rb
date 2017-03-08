@@ -1,22 +1,22 @@
 require "rails_helper"
 
-RSpec.describe Admin, type: :model do
+RSpec.describe User, type: :model do
   describe "#create_action_logs!" do
-    let(:admin){FactoryGirl.create :admin}
+    let(:user){FactoryGirl.create :user}
     context "when create action_log successfully" do
       it do
-        expect{admin.create_action_log!(admin, "login")}
+        expect{user.create_action_log!(user, "login")}
           .to change{ActionLog.count}.from(0).to 1
       end
     end
 
     context "when create action_log fail" do
       it do
-        expect{admin.create_action_log!("login")}
+        expect{user.create_action_log!("login")}
           .to raise_error(ArgumentError)
       end
       it do
-        expect{admin.create_action_log!(admin)}
+        expect{user.create_action_log!(user)}
           .to raise_error(ArgumentError)
       end
     end

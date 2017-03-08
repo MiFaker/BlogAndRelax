@@ -1,0 +1,43 @@
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav side-nav">
+    <li>
+      <%= link_to t("user.left_nav.home"), "javascript:;",
+        data: {toggle: "collapse", target:"#home-user"} %>
+      <ul id="home-user" class="collapse">
+      </ul>
+    </li>
+    <li>
+      <%= link_to t("user.left_nav.dash_board"), "javascript:;",
+        data: {toggle: "collapse", target:"#dash-board"} %>
+      <ul id="dash-board" class="collapse">
+      </ul>
+    </li>
+    <li>
+      <%= link_to t("user.left_nav.account"), "javascript:;",
+        data: {toggle: "collapse", target:"#list-account"} %>
+        <ul id="list-account" class="collapse">
+          <li><%= link_to t("user.left_nav.account_list.user_list"), "#" %></li>
+          <li><%= link_to t("user.left_nav.account_list.member_list"), "#" %></li>
+          <li><%= link_to t("user.left_nav.account_list.role_list"), "#" %></li>
+        </ul>
+    </li>
+    <li>
+      <%= link_to t("user.left_nav.authorization_user"), "javascript:;",
+        data: {toggle: "collapse", target:"#authorization"} %>
+      <ul id="authorization" class="collapse">
+      </ul>
+    </li>
+    <li>
+      <%= link_to t("user.left_nav.content_user"), "javascript:;",
+        data: {toggle: "collapse", target:"#content-user"} %>
+      <ul id="content-user" class="collapse">
+      </ul>
+    </li>
+    <li>
+      <%= link_to t("user.left_nav.statistic_data"), "javascript:;",
+        data: {toggle: "collapse", target:"#statistic-data"} %>
+      <ul id="statistic-data" class="collapse">
+      </ul>
+    </li>
+  </ul>
+</div>

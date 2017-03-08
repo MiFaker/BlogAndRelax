@@ -1,0 +1,29 @@
+<div ng-controller="UserListController" ng-init="refreshUserList()" id= "account-list" class="container">
+  <div class="row">
+    <h2 class="text-center"><%= t "user.account_list.title" %></h2>
+  </div>
+  <div class="pull-right" id="paginate-list">
+    <%= ng_pagination("total_items", "params.page", "params.limit", "refreshUserList()") %>
+  </div>
+  <div class="row">
+    <table class="table table-striped table-hover table-bordered">
+      <thead>
+        <tr class="title">
+          <th><%= t "user.account_list.id" %></th>
+          <th><%= t "user.account_list.name" %></th>
+          <th><%= t "user.account_list.email" %></th>
+          <th><%= t "user.account_list.phone" %></th>
+          <th><%= t "user.account_list.memo" %></th>
+        </tr>
+      </thead>
+      <tbody id="user-list">
+        <tr ng-repeat="user in users track by user.id">
+          <td class="text-center" ng-bind="::user.id"></td>
+          <td ng-bind="::user.first_name"></td>
+          <td ng-bind="::user.email"></td>
+          <td ng-bind="::user.phone"></td>
+          <td ng-bind="::user.memo"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
