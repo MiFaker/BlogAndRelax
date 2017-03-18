@@ -19,6 +19,7 @@ module BlogAndRelax
     # take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.action_controller.include_all_helpers = true
     config.active_record.raise_in_transactional_callbacks = true
     config.i18n.default_locale = :en
   end
