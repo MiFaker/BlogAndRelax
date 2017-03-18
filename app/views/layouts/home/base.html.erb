@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t "title" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag :application_user, media: "all" %>
+    <%= javascript_include_tag :application_user %>
+  </head>
+  <body ng-app="userApp">
+    <header>
+      <%= render "layouts/home/header" %>
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <section class="footer">
+      </section> -->
+    </header>
+    <%= javascript_include_tag :ng_user %>
+  </body>
+</html>

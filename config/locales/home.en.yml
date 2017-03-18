@@ -1,0 +1,10 @@
+en:
+  home:
+    header:
+      home: "Home"
+      bar: "BAR"
+      about: "About"
+      contact: "Contact"
+      forgot_password: "Frogot Password"
+      sign_up: "Sign Up"
+      close: "Close"

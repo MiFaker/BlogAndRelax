@@ -1,0 +1,10 @@
+vi:
+  home:
+    header:
+      home: "Trang Chủ"
+      bar: "BAR"
+      about: "Thông Tin"
+      contact: "Liên Hệ"
+      forgot_password: "Quên Mật Khẩu"
+      sign_up: "Đăng Ký"
+      close: "Đóng"
